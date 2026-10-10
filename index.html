@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TraceMate AI — The debugging detective. Predict the bug, investigate the root cause, apply the fix, learn the concept.">
+  <title>TraceMate AI — The Debugging Detective</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<!-- ── Site Header ──────────────────────────────────────── -->
+<header id="site-header">
+  <div class="container">
+    <div class="header-inner">
+
+      <!-- Logo -->
+      <div class="logo" tabindex="0" role="button" aria-label="TraceMate AI — go home">
+        <div class="logo-icon" aria-hidden="true">🔍</div>
+        <span>TraceMate<span style="color:var(--accent);">AI</span></span>
+        <span class="logo-sub">Debugging Detective</span>
+      </div>
+
+      <!-- Nav -->
+      <nav class="header-nav" aria-label="Main navigation">
+        <button class="nav-btn active" data-stage="board" id="nav-board" aria-label="Case Board">
+          Case Board
+        </button>
+        <button class="nav-btn" data-stage="casebook" id="nav-casebook" aria-label="Personal Casebook">
+          Casebook
+        </button>
+      </nav>
+
+      <!-- Stats strip -->
+      <div class="stats-strip" aria-label="Your progress">
+        <div class="stat-item">
+          <span class="stat-value" id="stat-cases">0</span>
+          <span class="stat-label">Investigated</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value" id="stat-predictions">0</span>
+          <span class="stat-label">Predicted</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value" id="stat-quiz">0</span>
+          <span class="stat-label">Quiz Correct</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value" id="stat-saved">0</span>
+          <span class="stat-label">Lessons Saved</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<!-- ── Main App ──────────────────────────────────────────── -->
+<main id="app" role="main" aria-live="polite" aria-atomic="false">
+  <!-- Content rendered by app.js -->
+  <div class="container" style="text-align:center;padding:var(--s8);">
+    <div class="spinner" style="margin:0 auto var(--s4);width:32px;height:32px;"></div>
+    <p style="color:var(--text-muted);">Loading TraceMate AI…</p>
+  </div>
+</main>
+
+<!-- ── Toast container ───────────────────────────────────── -->
+<div id="toast-container" role="status" aria-live="polite"></div>
+
+<!-- ── Footer ────────────────────────────────────────────── -->
+<footer id="site-footer">
+  <div class="container">
+    <p>TraceMate AI &mdash; The Debugging Detective &nbsp;·&nbsp; Built for the AI for Learning &amp; Developer Productivity Hackathon &nbsp;·&nbsp; <span style="color:var(--accent);">Demo Mode</span></p>
+  </div>
+</footer>
+
+<!-- ── Module scripts ────────────────────────────────────── -->
+<script type="module" src="js/app.js"></script>
+
+</body>
+</html>
